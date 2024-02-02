@@ -1,5 +1,5 @@
 /*
-Are you a bird or a cat
+Are you a bird or a cat or bunny
 
 what's your choice of dinner?
 	fish stew? CAT
