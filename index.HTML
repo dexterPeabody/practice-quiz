@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>What Are You?: A Javascript Quiz</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
@@ -14,6 +14,24 @@
         <h1>What Are You?: A Javascript Quiz</h1> 
         </header>
         <main id="quiz-body">
+            <div id="question-container"></div>
+            <div id="answer-container">
+              <div id="radio-group">
+              <input type="radio" id="answer-option-one" name="answer" value="1" />
+                <label for="answer-option-one" id="option-one-text"></label>
+              </div>
+              <div id="radio-group">
+              <input type="radio" id="answer-option-two" name="answer" value="2" />
+                <label for="answer-option-two" id="option-two-text"></label>
+              </div>
+              <div id="radio-group">
+              <input type="radio" id="answer-option-three" name="answer" value="3" />
+                <label for="answer-option-three" id="option-three-text"></label>
+              </div>
+              <div id="center-btn">
+                <button type="button" id="submit-btn">Submit</button>
+              </div>
+            </div>
             
         </main>
     </div>
