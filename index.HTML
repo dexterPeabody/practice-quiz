@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>What Are You?: A Javascript Quiz</title>
+    <title>What Might You Be?</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div id="quiz-container">
         <header>
-        <h1>What Are You?: A Javascript Quiz</h1> 
+        <h1>What Might You Be? </h1>
+        <h2> A Javascript Quiz by Tyler Richards</h2> 
         </header>
-        <main id="quiz-body">
+        <div id="quiz-body" >
             <div id="question-container"></div>
             <div id="answer-container">
               <div id="radio-group">
@@ -33,7 +34,12 @@
               </div>
             </div>
             
-        </main>
+          </div>
+          <div id="result-img" class="hide">
+            <h3 id="img-title"></h3>
+            <img id="image-result" />
+          </div>
+          </div>
     </div>
 	<script src="index.js"></script>
   </body>

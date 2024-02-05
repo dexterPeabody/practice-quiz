@@ -32,6 +32,7 @@ let answerThree = document.getElementById('option-three-text');
 
 let userScore = [];
 let currentQuestion = 0
+let result;
 
 	
 let theFiveQuestions = [
@@ -39,14 +40,14 @@ let theFiveQuestions = [
 		question:"What is your choice of dinner?",
 		answers: [
 			"Fish stew",
-			"Chocolote worms",
+			"Chocolate worms",
 			"A fresh garden salad"
 		]
 	},
 	{
-		question: "What is your choice of a comphy bed?",
+		question: "What is your choice of a comfy bed?",
 		answers: [
-			"Your significant other's laundy",
+			"Your significant other's laundry",
 			"A twisted mess of your own creation",
 			"A warm burrow under the sheets"
 		]
@@ -62,9 +63,9 @@ let theFiveQuestions = [
 	{
 		question: "What is the best means of travel?",
 		answers: [
-			"A private chauffeur though the cuntry side",
+			"A private chauffeur though the country side",
 			"A direct first class flight",
-			"Train hopping cross cuntry"
+			"Train hopping cross country"
 		]
 	},
 	{
@@ -84,8 +85,77 @@ function runQuiz(){
 	answerThree.innerHTML = theFiveQuestions[currentQuestion].answers[2];
 }
 
+function nextQuestion(){
+	currentQuestion++;
+	runQuiz()
+}
+
 runQuiz()
 
-function submit-btn(){
+function getResults(){
+	userScore.sort((a, b) => a - b); 
+let count = 1, 
+    max = 0
+     
+  
+for (let i = 1; i < userScore.length; ++i) { 
+    if (userScore[i] === userScore[i - 1]) { 
+        count++; 
+    } else { 
+        count = 1; 
+    } 
+    if (count > max) { 
+        max = count; 
+        result = userScore[i]; 
+    } 
+} 
+}
 
+function getImage(){
+	let imageResult = document.getElementById("image-result");
+	let imgTitle = document.getElementById("img-title");
+	document.getElementById('result-img').classList.remove('hide')
+
+	if (result == 1){
+		imageResult.setAttribute("src", "cat.jpeg")
+		imgTitle.innerHTML = `Looks like you're a cool cat!`
+	} else if (result == 2){
+		imageResult.setAttribute("src", "bird.jpeg")
+		imgTitle.innerHTML = `Looks like you're a cool Bird!`
+	} else {
+		imageResult.setAttribute("src", "bunny.jpeg")
+		imgTitle.innerHTML = `Looks like you're a cool Bunny!`
+	}
+}
+
+document.getElementById('submit-btn').onclick = function() {
+	if( userScore.length <= 3)
+	{let selected = document.querySelector(
+		'input[type=radio][name=answer]:checked');
+	console.log(selected.value);
+
+	userScore.push(selected.value);
+
+	nextQuestion();
+
+	selected.checked = false;
+
+	console.log(userScore)}
+
+	else {
+		let selected = document.querySelector(
+			'input[type=radio][name=answer]:checked');
+		
+	
+		userScore.push(selected.value);
+
+		document.getElementById('quiz-body').classList.add('hide')
+
+		console.log(userScore)
+
+		getResults();
+
+		getImage();
+	
+	}
 }
