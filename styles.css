@@ -65,7 +65,7 @@ header{
     background-color: aliceblue;
     line-height: 75px;
     font-weight: bold;
-    padding-left: 25%;
+    /* padding-left: 25%; */
 }
 
 
@@ -121,6 +121,7 @@ header{
         width: 100%;
     };
     #radio-group{
-        padding-left: 5%;
+        padding-left: none;
+        font-size: x-small;
     }
 }
