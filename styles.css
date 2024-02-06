@@ -57,7 +57,7 @@ header{
     
 
 #radio-group{
-    
+
     /* display: block; */
     height: 75px;
     /* width: 95%; */
@@ -125,5 +125,8 @@ header{
     #radio-group{
         padding-left: none;
         font-size: x-small;
+    };
+    #image-result{
+        width: 100%;
     }
 }
