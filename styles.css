@@ -104,6 +104,8 @@ header{
     justify-content: center; */
     width: auto;
     height: auto;
+    object-fit: cover;
+
    
     
 }
