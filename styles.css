@@ -102,8 +102,7 @@ header{
 #image-result{
     /* display: flex;
     justify-content: center; */
-    width: auto;
-    height: auto;
+    margin: auto;
    
 }
 
