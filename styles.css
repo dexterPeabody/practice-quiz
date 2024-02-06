@@ -125,8 +125,8 @@ header{
         padding-left: none;
         font-size: x-small;
     };
-    #image-result{
+    /* #image-result{
         width: 200px;
         height: 200px;
-    }
+    } */
 }
