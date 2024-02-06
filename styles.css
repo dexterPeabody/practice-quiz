@@ -96,7 +96,7 @@ header{
 
 #img-title{
     margin: auto;
-    width:75%%
+    width:75%
 }
 
 #image-result{
@@ -109,7 +109,7 @@ header{
 }
 
 #result-img{
-    
+    width: 95%;
     margin: auto;
 }
 
