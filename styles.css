@@ -104,9 +104,8 @@ header{
     justify-content: center; */
     width: 400px;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
+   
+    
 }
 
 #result-img{
@@ -127,8 +126,9 @@ header{
         padding-left: none;
         font-size: x-small;
     };
-    #image-result{
-       
-        object-fit: scale-down;
+    #result-img{
+        max-width: 100%;
+        height: auto;
+
     }
 }
