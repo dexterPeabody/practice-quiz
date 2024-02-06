@@ -8,6 +8,8 @@
     display: none;
 }
 
+
+
 body{
     margin: auto;
     /* max-width: 80%; */
@@ -113,6 +115,22 @@ header{
     margin: auto;
 }
 
+#popUp{
+    /* display: none; */
+    width: 100%;
+    height: 30px;
+    padding-bottom: 5px;
+   position: absolute;
+   text-align: center;
+   color: white;
+   top: 230px;
+    z-index: 5;
+    background-color: brown;
+    /* line-height: 30px; */
+}
+    
+
+
 @media only screen and (max-width: 600px) {
     body{
         max-width: 95%;
@@ -129,4 +147,12 @@ header{
         width: 200px;
         height: 200px;
     } */
+    /* #popUp{
+        display:block;
+    } */
+}
+@media only screen and (min-width: 600px) {
+    #popUp{
+        display: none;
+    }
 }
