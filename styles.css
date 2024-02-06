@@ -105,9 +105,6 @@ header{
     width: auto;
     height: auto;
     object-fit: cover;
-
-   
-    
 }
 
 #result-img{
@@ -128,9 +125,4 @@ header{
         padding-left: none;
         font-size: x-small;
     };
-    #result-img{
-        max-width: 100%;
-        height: auto;
-
-    }
 }
