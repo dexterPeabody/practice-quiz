@@ -57,13 +57,14 @@ header{
     
 
 #radio-group{
+    
     /* display: block; */
     height: 75px;
     /* width: 95%; */
     margin: auto;
     margin-bottom: 25px;
     background-color: aliceblue;
-    line-height: 75px;
+    /* line-height: 75px; */
     font-weight: bold;
     /* padding-left: 25%; */
 }
