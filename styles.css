@@ -112,9 +112,10 @@ header{
     height: 100vh
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     body{
-        max-width: 95%;;
+        max-width: 95%;
+        background-color: brown;
     };
     #quiz-container{
         width: 100%;
