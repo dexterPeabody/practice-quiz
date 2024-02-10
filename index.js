@@ -87,6 +87,8 @@ function runQuiz(){
 
 function nextQuestion(){
 	currentQuestion++;
+
+	// 
 	runQuiz()
 }
 
@@ -98,6 +100,15 @@ let count = 1,
     max = 0
      
   
+	let results = {}
+	for (let i = 0; i < userScore.length; i++) {
+		if (!(userScore[i] in results)) {
+			results[userScore[i]] = 1;
+		} else {
+			results[userScore[i]]++;
+		}
+	}
+	console.log(results);
 for (let i = 1; i < userScore.length; ++i) { 
     if (userScore[i] === userScore[i - 1]) { 
         count++; 
